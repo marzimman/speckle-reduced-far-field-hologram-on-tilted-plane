@@ -10,7 +10,7 @@ We have added two new methods, the code for which is published here:
 - a simple Speckle Reduction method
 - propagation and calibration for tilted planes using non-uniform FFTs as described by [Chang et al.](https://opg.optica.org/abstract.cfm?URI=oe-22-14-17331)
 
-## Getting Started
+## 
 This code requires TensorFlow >= 2.16
 
 With some changes in the PropagateFarFieldLayer-class TensorFlow 2.9 also works.
@@ -18,6 +18,10 @@ With some changes in the PropagateFarFieldLayer-class TensorFlow 2.9 also works.
 
 * ```model_optical_system.py``` contains all the code to model a simple optical system (as described in the paper) containing a Spatial-Light-Modulator and a potentially tilted sensor in the far field.
 * ```SGD_SpeckleReduction.py``` contains the method to find the Speckle in the target area and compute a loss function to reduce the Speckle succesfully.
+
+Intensity in the far field
+
+![til](./intensity_iterations_0_200.gif)
 
 ## Citation
 If you find our work useful in your research, please cite:
