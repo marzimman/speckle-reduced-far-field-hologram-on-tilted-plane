@@ -8,7 +8,7 @@ This Code was used in a Camera-in-the-loop calibration scheme as it was proposed
 
 We have added two new methods, the code for which is published here:
 - a simple Speckle Reduction method
-- propagation and calibration for tilted planes using non-uniform FFTs as described by [Chang et al.][https://opg.optica.org/abstract.cfm?URI=oe-22-14-17331)
+- propagation and calibration for tilted planes using non-uniform FFTs as described by [Chang et al.](https://opg.optica.org/abstract.cfm?URI=oe-22-14-17331)
 
 ## Getting Started
 This code required TensorFlow >= 2.16
