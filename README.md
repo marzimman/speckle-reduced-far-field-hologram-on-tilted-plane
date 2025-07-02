@@ -11,8 +11,8 @@ We have added two new methods, the code for which is published here:
 - propagation and calibration for tilted planes using non-uniform FFTs as described by [Chang et al.](https://opg.optica.org/abstract.cfm?URI=oe-22-14-17331)
 
 ## Getting Started
-This code requires TensorFlow >= 2.16
-With some changed in the PropagateFarFieldLayer-class TensorFlow 2.9 also works.
+This code requires TensorFlow >= 2.16\\
+With some changes in the PropagateFarFieldLayer-class TensorFlow 2.9 also works.
 
 
 * ```model_optical_system.py``` contains all the code to model a simple optical system (as described in the paper) containing a Spatial-Light-Modulator and a potentially tilted sensor in the far field.
