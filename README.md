@@ -21,7 +21,15 @@ With some changes in the PropagateFarFieldLayer-class TensorFlow 2.9 also works.
 
 Intensity in the far field
 
-![til](./intensity_iterations_0_200.gif)
+![til](./images/intensity_iterations_0_200.gif)
+
+Sketch of the optical setup
+
+![Optical setup](./images/setup_sketch.png)
+
+Target Area in the far field with Speckle Reduction in the target area
+
+![Target Area in the far field](./images/far_field_area.png)
 
 ## Citation
 If you find our work useful in your research, please cite:
