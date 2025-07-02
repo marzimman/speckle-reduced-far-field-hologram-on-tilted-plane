@@ -1,0 +1,3 @@
+[submodule "tfkbnufft"]
+	path = tfkbnufft
+	url = https://github.com/marzimman/tfkbnufft.git
