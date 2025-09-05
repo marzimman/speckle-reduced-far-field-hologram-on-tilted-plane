@@ -35,12 +35,16 @@ Target Area in the far field with Speckle Reduction in the target area
 If you find our work useful in your research, please cite:
 
 ```
-@article{Zimmermann:2025:Improved,
-author = {M. Zimmermann, A. Brenner, T. Haist, S. Reichelt},
-title = {Improved far field holograms using spatial light modulators and camera-in-the-loop optimization },
-journal = {},
-issue = {},
-number = {},
+@article{Zimmermann_improved_2025,
+author = {Markus Zimmermann and Andreas Brenner and Tobias Haist and Stephan Reichelt},
+title = {{Improved far-field holograms using spatial light modulators and camera-in-the-loop optimization}},
+volume = {64},
+journal = {Optical Engineering},
+number = {9},
+publisher = {SPIE},
+pages = {094102},
 year = {2025},
+doi = {10.1117/1.OE.64.9.094102},
+URL = {https://doi.org/10.1117/1.OE.64.9.094102}
 }
 ```
