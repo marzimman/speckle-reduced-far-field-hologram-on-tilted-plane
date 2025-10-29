@@ -8,7 +8,8 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 class TiltLayer(tf.keras.layers.Layer):
-
+    def compute_output_shape(self, input_shape):
+            return input_shape
 
     def build(self, input_shape):
         self.angle_1 = self.add_weight(shape=(1, ), initializer="zeros", trainable=True, name = 'tilt_angle_1',dtype = tf.float64) #x
@@ -82,16 +83,11 @@ class UniformAmplitudeLayer(tf.keras.layers.Layer):
         return tf.complex(weighted_amplitude, 0.) * tf.complex(tf.math.cos(inputs), tf.math.sin(inputs))
 
 class PropagateFarFieldLayer(tf.keras.layers.Layer):
-
+    def compute_output_shape(self, input_shape):
+            return input_shape
     def call(self, inputs):
         inputs_shifted = tf.signal.fftshift(inputs)
-        
-        shifted_imag = tf.math.imag(inputs_shifted)
-        shifted_real = tf.math.real(inputs_shifted)
-        transformed = tf.keras.ops.fft2((shifted_real, shifted_imag))
-        cmplx_field = tf.complex(*transformed)
-        
-        #cmplx_field = tf.signal.fft2d(inputs_shifted) #for TF version <= 2.9
+        cmplx_field = tf.signal.fft2d(inputs_shifted)
         return tf.signal.fftshift(cmplx_field)
 
 class IntensityLayer(tf.keras.layers.Layer):
